@@ -102,8 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				3D741CBC1BE7ACBB003192BD /* AppDelegate.swift */,
-				3D741CBE1BE7ACBB003192BD /* ViewController.swift */,
 				3D741CC01BE7ACBB003192BD /* Main.storyboard */,
+				3D741CBE1BE7ACBB003192BD /* ViewController.swift */,
 				3D741CC31BE7ACBB003192BD /* Assets.xcassets */,
 				3D741CC51BE7ACBB003192BD /* LaunchScreen.storyboard */,
 				3D741CC81BE7ACBB003192BD /* Info.plist */,
