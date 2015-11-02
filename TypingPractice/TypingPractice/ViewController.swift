@@ -8,6 +8,17 @@
 
 import UIKit
 
+var arrayPhrase: [String] = ["Poopy sadFace angryFace", "devilFace angryFace Poopy", "Zzz sadFace poopy"]
+
+
+let arrayCount = UInt32(arrayPhrase.count)
+let randomIndex = Int(arc4random_uniform(arrayCount))
+
+
+
+
+
+
 class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var practiceTextField: UITextField!
@@ -16,24 +27,46 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        fillPhrase()
+
     }
 
+    func fillPhrase() {
+        
+        practiceLabel.text = arrayPhrase[randomIndex]
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
-        
-        return true
-        
-    }
-    
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
         
+        // we need to test the full textfield string == label string
+        
+        if practiceTextField == practiceLabel {
+            
+            practiceTextField.text = ""
+            practiceLabel.text = arrayPhrase[randomIndex]
+            return true
+            
+        } else {
+            return false
+        }
+        
+        // if true, change label to next phrase and empty text field
+
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        
+        // user finished editing
         
         return true
+        
     }
 }
 
