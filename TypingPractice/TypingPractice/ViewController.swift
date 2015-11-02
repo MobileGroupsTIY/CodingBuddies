@@ -13,7 +13,7 @@
 
 import UIKit
 
-var arrayPhrase: [String] = ["Poopy sadFace angryFace", "devilFace angryFace Poopy", "Zzz sadFace poopy"]
+var arrayPhrase: [String] = ["Poopy sadFace angryFace ", "devilFace angryFace Poopy ", "Zzz sadFace poopy "]
 
 
 let arrayCount = UInt32(arrayPhrase.count)
