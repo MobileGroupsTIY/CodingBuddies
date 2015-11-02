@@ -26,30 +26,45 @@
                                         <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="💤"/>
+                                        <connections>
+                                            <action selector="touchedEmoji:" destination="HsG-3o-COm" eventType="touchUpInside" id="aCw-Fx-uEA"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vns-XN-TBJ">
                                         <rect key="frame" x="112" y="0.0" width="112" height="60"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="😩"/>
+                                        <connections>
+                                            <action selector="touchedEmoji:" destination="HsG-3o-COm" eventType="touchUpInside" id="U0q-Cm-tza"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V5K-0c-twS">
                                         <rect key="frame" x="224" y="0.0" width="112" height="60"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="💩"/>
+                                        <connections>
+                                            <action selector="touchedEmoji:" destination="HsG-3o-COm" eventType="touchUpInside" id="0dw-h9-MhM"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BWE-f0-iQJ">
                                         <rect key="frame" x="336" y="0.0" width="112" height="60"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="😈"/>
+                                        <connections>
+                                            <action selector="touchedEmoji:" destination="HsG-3o-COm" eventType="touchUpInside" id="wbr-sS-CyE"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iR7-aU-aTA">
                                         <rect key="frame" x="448" y="0.0" width="112" height="60"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="😡"/>
+                                        <connections>
+                                            <action selector="touchedEmoji:" destination="HsG-3o-COm" eventType="touchUpInside" id="Kfs-q3-yTe"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <animations/>

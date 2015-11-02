@@ -10,6 +10,37 @@ import UIKit
 
 class KeyboardViewController: UIInputViewController {
 
+    @IBAction func touchedEmoji(button: UIButton) {
+        
+        guard let text = button.titleLabel?.text else { return }
+        
+        switch text {
+            
+            
+        case "💤" : textDocumentProxy.insertText("Zzz")
+        case "😩" : textDocumentProxy.insertText("sadFace")
+        case "💩" : textDocumentProxy.insertText("poopy")
+        case "😈" : textDocumentProxy.insertText("devilFace")
+        case "😡" : textDocumentProxy.insertText("angryFace")
+
+            
+        default : print("Blah")
+            
+        }
+        
+        var dictionary: [String:String] = [
+        
+            "💤" : "Zzz",
+            "😩" : "sadFace",
+            "💩" : "Poopy",
+            "😈" : "devilFace",
+            "😡" : "angryFace"
+            
+        
+       ]
+    }
+    
+    
     @IBOutlet var nextKeyboardButton: UIButton!
 
     override func updateViewConstraints() {
