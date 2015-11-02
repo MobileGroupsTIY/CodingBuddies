@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14FF8E831BE7AF5C00FF759A /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FF8E821BE7AF5C00FF759A /* KeyboardViewController.swift */; };
+		14FF8E871BE7AF5C00FF759A /* PracticeKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 14FF8E801BE7AF5C00FF759A /* PracticeKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3D741CBD1BE7ACBB003192BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D741CBC1BE7ACBB003192BD /* AppDelegate.swift */; };
 		3D741CBF1BE7ACBB003192BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D741CBE1BE7ACBB003192BD /* ViewController.swift */; };
 		3D741CC21BE7ACBB003192BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D741CC01BE7ACBB003192BD /* Main.storyboard */; };
@@ -14,7 +16,34 @@
 		3D741CC71BE7ACBB003192BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D741CC51BE7ACBB003192BD /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		14FF8E851BE7AF5C00FF759A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D741CB11BE7ACBB003192BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14FF8E7F1BE7AF5C00FF759A;
+			remoteInfo = PracticeKeyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		14FF8E8B1BE7AF5C00FF759A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				14FF8E871BE7AF5C00FF759A /* PracticeKeyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		14FF8E801BE7AF5C00FF759A /* PracticeKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PracticeKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		14FF8E821BE7AF5C00FF759A /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		14FF8E841BE7AF5C00FF759A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D741CB91BE7ACBB003192BD /* TypingPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TypingPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D741CBC1BE7ACBB003192BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D741CBE1BE7ACBB003192BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,6 +54,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		14FF8E7D1BE7AF5C00FF759A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3D741CB61BE7ACBB003192BD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -35,10 +71,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14FF8E811BE7AF5C00FF759A /* PracticeKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				14FF8E821BE7AF5C00FF759A /* KeyboardViewController.swift */,
+				14FF8E841BE7AF5C00FF759A /* Info.plist */,
+			);
+			path = PracticeKeyboard;
+			sourceTree = "<group>";
+		};
 		3D741CB01BE7ACBB003192BD = {
 			isa = PBXGroup;
 			children = (
 				3D741CBB1BE7ACBB003192BD /* TypingPractice */,
+				14FF8E811BE7AF5C00FF759A /* PracticeKeyboard */,
 				3D741CBA1BE7ACBB003192BD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				3D741CB91BE7ACBB003192BD /* TypingPractice.app */,
+				14FF8E801BE7AF5C00FF759A /* PracticeKeyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +114,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		14FF8E7F1BE7AF5C00FF759A /* PracticeKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14FF8E8A1BE7AF5C00FF759A /* Build configuration list for PBXNativeTarget "PracticeKeyboard" */;
+			buildPhases = (
+				14FF8E7C1BE7AF5C00FF759A /* Sources */,
+				14FF8E7D1BE7AF5C00FF759A /* Frameworks */,
+				14FF8E7E1BE7AF5C00FF759A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PracticeKeyboard;
+			productName = PracticeKeyboard;
+			productReference = 14FF8E801BE7AF5C00FF759A /* PracticeKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		3D741CB81BE7ACBB003192BD /* TypingPractice */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D741CCB1BE7ACBB003192BD /* Build configuration list for PBXNativeTarget "TypingPractice" */;
@@ -74,10 +138,12 @@
 				3D741CB51BE7ACBB003192BD /* Sources */,
 				3D741CB61BE7ACBB003192BD /* Frameworks */,
 				3D741CB71BE7ACBB003192BD /* Resources */,
+				14FF8E8B1BE7AF5C00FF759A /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				14FF8E861BE7AF5C00FF759A /* PBXTargetDependency */,
 			);
 			name = TypingPractice;
 			productName = TypingPractice;
@@ -94,6 +160,9 @@
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Kelly Robinson";
 				TargetAttributes = {
+					14FF8E7F1BE7AF5C00FF759A = {
+						CreatedOnToolsVersion = 7.1;
+					};
 					3D741CB81BE7ACBB003192BD = {
 						CreatedOnToolsVersion = 7.1;
 					};
@@ -113,11 +182,19 @@
 			projectRoot = "";
 			targets = (
 				3D741CB81BE7ACBB003192BD /* TypingPractice */,
+				14FF8E7F1BE7AF5C00FF759A /* PracticeKeyboard */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		14FF8E7E1BE7AF5C00FF759A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3D741CB71BE7ACBB003192BD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -131,6 +208,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		14FF8E7C1BE7AF5C00FF759A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14FF8E831BE7AF5C00FF759A /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3D741CB51BE7ACBB003192BD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -141,6 +226,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		14FF8E861BE7AF5C00FF759A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14FF8E7F1BE7AF5C00FF759A /* PracticeKeyboard */;
+			targetProxy = 14FF8E851BE7AF5C00FF759A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3D741CC01BE7ACBB003192BD /* Main.storyboard */ = {
@@ -162,6 +255,28 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		14FF8E881BE7AF5C00FF759A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PracticeKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Kelly.TypingPractice.PracticeKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		14FF8E891BE7AF5C00FF759A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PracticeKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Kelly.TypingPractice.PracticeKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		3D741CC91BE7ACBB003192BD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -247,6 +362,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = TypingPractice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Kelly.TypingPractice;
@@ -258,6 +374,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = TypingPractice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Kelly.TypingPractice;
@@ -268,6 +385,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		14FF8E8A1BE7AF5C00FF759A /* Build configuration list for PBXNativeTarget "PracticeKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14FF8E881BE7AF5C00FF759A /* Debug */,
+				14FF8E891BE7AF5C00FF759A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		3D741CB41BE7ACBB003192BD /* Build configuration list for PBXProject "TypingPractice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -284,6 +409,7 @@
 				3D741CCD1BE7ACBB003192BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
