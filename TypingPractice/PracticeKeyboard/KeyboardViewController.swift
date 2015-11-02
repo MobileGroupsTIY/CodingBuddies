@@ -10,39 +10,29 @@ import UIKit
 
 var dictionary: [String:String] = [
     
-    "💤" : "Zzz",
-    "😩" : "sadFace",
-    "💩" : "Poopy",
-    "😈" : "devilFace",
-    "😡" : "angryFace"
+    "💤" : "Zzz ",
+    "😩" : "sadFace ",
+    "💩" : "Poopy ",
+    "😈" : "devilFace ",
+    "😡" : "angryFace "
     
     
 ]
 
 class KeyboardViewController: UIInputViewController {
+    
+    
+    @IBAction func backButton(button: UIButton) {
+        
+        textDocumentProxy.deleteBackward()
+        
+    }
 
     @IBAction func touchedEmoji(button: UIButton) {
         
         guard let text = button.titleLabel?.text else { return }
         
         textDocumentProxy.insertText(dictionary["\(text)"]!)
-        
-
-        
-//
-//        switch text {
-//            
-//            
-//        case "💤" : textDocumentProxy.insertText("Zzz")
-//        case "😩" : textDocumentProxy.insertText("sadFace")
-//        case "💩" : textDocumentProxy.insertText("poopy")
-//        case "😈" : textDocumentProxy.insertText("devilFace")
-//        case "😡" : textDocumentProxy.insertText("angryFace")
-//
-//            
-//        default : print("Blah")
-//            
-//        }
         
 
     }
