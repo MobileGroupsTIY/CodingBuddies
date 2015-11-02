@@ -14,6 +14,7 @@
 		3D741CC21BE7ACBB003192BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D741CC01BE7ACBB003192BD /* Main.storyboard */; };
 		3D741CC41BE7ACBB003192BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D741CC31BE7ACBB003192BD /* Assets.xcassets */; };
 		3D741CC71BE7ACBB003192BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D741CC51BE7ACBB003192BD /* LaunchScreen.storyboard */; };
+		3D741CD11BE7C861003192BD /* Kelly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D741CD01BE7C861003192BD /* Kelly.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		3D741CC31BE7ACBB003192BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D741CC61BE7ACBB003192BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D741CC81BE7ACBB003192BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D741CD01BE7C861003192BD /* Kelly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kelly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		3D741CB01BE7ACBB003192BD = {
 			isa = PBXGroup;
 			children = (
+				3D741CD01BE7C861003192BD /* Kelly.swift */,
 				3D741CBB1BE7ACBB003192BD /* TypingPractice */,
 				14FF8E811BE7AF5C00FF759A /* PracticeKeyboard */,
 				3D741CBA1BE7ACBB003192BD /* Products */,
@@ -222,6 +225,7 @@
 			files = (
 				3D741CBF1BE7ACBB003192BD /* ViewController.swift in Sources */,
 				3D741CBD1BE7ACBB003192BD /* AppDelegate.swift in Sources */,
+				3D741CD11BE7C861003192BD /* Kelly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +396,7 @@
 				14FF8E891BE7AF5C00FF759A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3D741CB41BE7ACBB003192BD /* Build configuration list for PBXProject "TypingPractice" */ = {
 			isa = XCConfigurationList;
